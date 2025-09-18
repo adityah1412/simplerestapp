@@ -27,7 +27,7 @@ jobs:
       with:
         app-name: simple-rest-app
         resource-group: <your-resource-group>
-        jar-path: target/simple-rest-app-0.0.1-SNAPSHOT.jar
+        appSourcePath: .  # Points to the folder with pom.xml
         runtime: java
         ingress: external
         target-port: 8080
