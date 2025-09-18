@@ -26,8 +26,9 @@ jobs:
       uses: azure/container-apps-deploy-action@v1
       with:
         app-name: simple-rest-app
-        resource-group: <your-resource-group>
-        appSourcePath: .  # Points to the folder with pom.xml
+        resource-group: testrestapp
+        acrName: testrestacr
+        appSourcePath: .
         runtime: java
         ingress: external
         target-port: 8080
